@@ -11,10 +11,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
-app.use(cors({
-  origin: ["http://localhost:3000", "https://rmantonio-fitnesstrackerserver.onrender.com", "https://rmantonio-fitnesstrackerserver.onrender.com"],
-  credentials: true
-}));
+app.use(cors());
 
 //MongoDB database
 mongoose.connect("mongodb+srv://admin:admin@b561-antonio.qm1y7tb.mongodb.net/FitnessTrackerAPI?retryWrites=true&w=majority&appName=B561-Antonio", {
