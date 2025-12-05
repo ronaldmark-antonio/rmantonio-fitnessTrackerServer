@@ -12,9 +12,8 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
 app.use(cors({
-  	origin: ["http://localhost:3000", "https://rmantonio-fitnesstrackerserver.onrender.com"],
-  	credentials: true,
-    optionsSuccessStatus: 200
+  origin: ["http://localhost:3000", "https://rmantonio-fitnesstrackerserver.onrender.com", "https://rmantonio-fitnesstrackerserver.onrender.com"],
+  credentials: true
 }));
 
 //MongoDB database
